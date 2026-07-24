@@ -138,7 +138,7 @@ export const projects = [
     title: "Lucis",
     category: "Photography",
     year: "2025",
-    link: "https://forever-admin-lac-two.vercel.app/",
+    link: "https://lucis-photos.vercel.app/",
     github: "https://github.com",
     description:
       "Capturing life's most meaningful moments with creativity, passion, and timeless photography.",
