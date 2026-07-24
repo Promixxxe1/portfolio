@@ -133,6 +133,18 @@ export const projects = [
     tech: ["React", "Framer Motion", "EmailJS"],
     color: "#3D5A4C",
   },
+  {
+    id: 6,
+    title: "Lucis",
+    category: "Photography",
+    year: "2025",
+    link: "https://forever-admin-lac-two.vercel.app/",
+    github: "https://github.com",
+    description:
+      "Capturing life's most meaningful moments with creativity, passion, and timeless photography.",
+    tech: ["React", "Framer Motion", "EmailJS"],
+    color: "#3D5A4C",
+  },
 ];
 
 export const timeline = [
