@@ -134,11 +134,23 @@ export const projects = [
     color: "#3D5A4C",
   },
   {
-    id: 6,
+    id: 7,
     title: "Lucis",
     category: "Photography",
     year: "2025",
     link: "https://lucis-photos.vercel.app/",
+    github: "https://github.com",
+    description:
+      "Capturing life's most meaningful moments with creativity, passion, and timeless photography.",
+    tech: ["React", "Framer Motion", "EmailJS"],
+    color: "#3D5A4C",
+  },
+  {
+    id: 8,
+    title: "Grill Restuarant",
+    category: "Eatery",
+    year: "2025",
+    link: "https://grill-orpin.vercel.app/",
     github: "https://github.com",
     description:
       "Capturing life's most meaningful moments with creativity, passion, and timeless photography.",
