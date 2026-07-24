@@ -18,7 +18,7 @@ export const profile = {
     { name: 'GitHub', url: 'https://github.com/', label: 'GitHub profile' },
     { name: 'LinkedIn', url: 'https://linkedin.com', label: 'LinkedIn profile' },
     { name: 'Twitter', url: 'https://twitter.com', label: 'Twitter profile' },
-  ],
+  ], 
 };
 
 export const navLinks = [
