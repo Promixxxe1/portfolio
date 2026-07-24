@@ -1,0 +1,53 @@
+.voices__stack {
+  display: grid;
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+  .voices__stack {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+}
+
+.voices__card {
+  background: var(--color-surface);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  position: relative;
+  transition: var(--transition);
+}
+
+.voices__card:hover {
+  transform: translateY(-4px) rotate(calc(var(--offset, 0) * -0.5deg));
+  box-shadow: var(--shadow-lift);
+}
+
+.voices__quote {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--color-ink);
+  margin-bottom: var(--space-lg);
+}
+
+.voices__author {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.voices__name {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.voices__role {
+  font-size: 0.75rem;
+  color: var(--color-ink-muted);
+}

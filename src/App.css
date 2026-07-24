@@ -1,0 +1,8 @@
+.page-shell {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.page-shell--visible {
+  opacity: 1;
+}

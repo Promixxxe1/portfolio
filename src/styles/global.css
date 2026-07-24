@@ -1,0 +1,178 @@
+/* 
+   Gallery-style palette with a dark-first look that can be flipped to light. */
+
+:root {
+  --color-bg: #0f1115;
+  --color-bg-alt: #171a22;
+  --color-surface: #1d2230;
+  --color-ink: #f5efe3;
+  --color-ink-soft: #c7c0b4;
+  --color-ink-muted: #8f9389;
+  --color-accent: #f28f65;
+  --color-accent-soft: rgba(242, 143, 101, 0.16);
+  --color-sage: #8eaa8b;
+  --color-sage-soft: rgba(142, 170, 139, 0.16);
+  --color-border: rgba(245, 239, 227, 0.1);
+  --color-border-strong: rgba(245, 239, 227, 0.16);
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Outfit", system-ui, sans-serif;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 9rem;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+
+  --shadow-soft: 0 4px 24px rgba(5, 7, 12, 0.24);
+  --shadow-lift: 0 12px 40px rgba(5, 7, 12, 0.32);
+
+  --nav-width: 72px;
+  --content-max: 1280px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition: 0.4s var(--ease-out);
+}
+
+:root[data-theme="light"] {
+  --color-bg: #f5f0e8;
+  --color-bg-alt: #ebe4d8;
+  --color-surface: #fffcf7;
+  --color-ink: #2c2825;
+  --color-ink-soft: #5a534c;
+  --color-ink-muted: #8a8278;
+  --color-accent: #c45d3e;
+  --color-accent-soft: rgba(196, 93, 62, 0.12);
+  --color-sage: #5c6b5a;
+  --color-sage-soft: rgba(92, 107, 90, 0.15);
+  --color-border: rgba(44, 40, 37, 0.1);
+  --color-border-strong: rgba(44, 40, 37, 0.18);
+
+  --shadow-soft: 0 4px 24px rgba(44, 40, 37, 0.06);
+  --shadow-lift: 0 12px 40px rgba(44, 40, 37, 0.1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-ink);
+  background: var(--color-bg);
+  overflow-x: hidden;
+  transition:
+    background-color 0.35s ease,
+    color 0.35s ease;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.container {
+  width: min(100% - 2rem, var(--content-max));
+  margin-inline: auto;
+}
+
+@media (min-width: 1024px) {
+  .page-shell {
+    padding-left: var(--nav-width);
+  }
+}
+
+@media (max-width: 1023px) {
+  body {
+    padding-bottom: 80px;
+  }
+}
