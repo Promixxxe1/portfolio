@@ -1,14 +1,16 @@
 .connect {
-  background: var(--color-ink);
-  color: var(--color-bg);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  transition: background-color .35s ease,
+              color .35s ease;
 }
 
 .connect .section-label {
-  color: rgba(245, 240, 232, 0.5);
+  color: var(--color-ink-muted);
 }
 
 .connect .section-title {
-  color: var(--color-bg);
+  color: var(--color-ink);
 }
 
 .connect .section-title em {
@@ -28,10 +30,7 @@
 }
 
 .connect__intro {
-  color: rgba(245, 240, 232, 0.7);
-  margin-top: var(--space-md);
-  max-width: 40ch;
-  line-height: 1.7;
+  color: var(--color-ink-soft);
 }
 
 .connect__details {
@@ -53,11 +52,8 @@
   color: var(--color-accent);
 }
 
-.connect__detail-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: rgba(245, 240, 232, 0.4);
+.connect__detail-label{
+    color:var(--color-ink-muted);
 }
 
 .connect__social {
@@ -66,13 +62,9 @@
   margin-top: var(--space-lg);
 }
 
-.connect__social a {
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  padding-bottom: 2px;
-  border-bottom: 1px solid rgba(245, 240, 232, 0.2);
-  transition: var(--transition);
+.connect__social a{
+    color: var(--color-ink);
+    border-bottom:1px solid var(--color-border);
 }
 
 .connect__social a:hover {
@@ -142,4 +134,44 @@
 .connect__submit:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+
+
+/* =========================
+   Theme Overrides
+========================= */
+
+:root:not([data-theme="light"]) .connect {
+    background: #0d1117;
+}
+
+:root:not([data-theme="light"]) .connect__form{
+    background:#161b22;
+}
+
+:root:not([data-theme="light"]) .connect__field input,
+:root:not([data-theme="light"]) .connect__field textarea{
+    background:#0f141b;
+    color:#f5efe3;
+    border-color:#2d3643;
+}
+
+:root:not([data-theme="light"]) .connect__field input::placeholder,
+:root:not([data-theme="light"]) .connect__field textarea::placeholder{
+    color:#8f9389;
+}
+
+:root:not([data-theme="light"]) .connect__submit{
+    background:var(--color-accent);
+    color:#fff;
+}
+
+/* //light theme ------------------*/
+:root[data-theme="light"] .connect{
+    background:#f8f5ef;
+}
+
+:root[data-theme="light"] .connect__form{
+    background:#fff;
 }

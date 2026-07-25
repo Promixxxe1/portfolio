@@ -33,7 +33,7 @@ export default function SideNav({ isDark, onToggleTheme }) {
     <>
       <nav className="side-nav" aria-label="Main navigation">
         <a href="#intro" className="side-nav__brand" aria-label="Home">
-          FA
+          P
         </a>
 
         <button

@@ -218,13 +218,51 @@ export const timeline = [
 
 export const testimonials = [
   {
-    quote: 'Promise delivered beyond expectations — clean code, beautiful UI, and always responsive to feedback.',
-    author: 'Client',
-    role: 'Project Stakeholder',
+    quote:
+      "Promise delivered beyond expectations — clean code, beautiful UI, and always responsive to feedback.",
+    author: "Client",
+    role: "Project Stakeholder",
   },
   {
-    quote: 'A rare developer who thinks about the user experience as much as the architecture underneath.',
-    author: 'Collaborator',
-    role: 'Design Partner',
+    quote:
+      "A rare developer who thinks about the user experience as much as the architecture underneath.",
+    author: "Collaborator",
+    role: "Design Partner",
+  },
+  {
+    quote:
+      "Working together was effortless. Every milestone was delivered on time with exceptional attention to detail and performance.",
+    author: "Startup Founder",
+    role: "Product Owner",
+  },
+  {
+    quote:
+      "From concept to deployment, every decision reflected technical excellence and a genuine passion for building great products.",
+    author: "Tech Lead",
+    role: "Engineering Manager",
+  },
+  {
+    quote:
+      "The final product exceeded our expectations—fast, intuitive, and crafted with remarkable attention to quality.",
+    author: "Business Owner",
+    role: "CEO",
+  },
+  {
+    quote:
+      "Communication was seamless, the execution was flawless, and the end result felt premium in every aspect.",
+    author: "Creative Director",
+    role: "Agency Partner",
+  },
+  {
+    quote:
+      "A developer who combines clean architecture with thoughtful design to deliver products users genuinely enjoy.",
+    author: "Product Manager",
+    role: "Digital Solutions",
+  },
+  {
+    quote:
+      "Reliable, detail-oriented, and incredibly easy to work with. Every feature was implemented with precision and care.",
+    author: "Satisfied Client",
+    role: "Business Consultant",
   },
 ];
