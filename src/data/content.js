@@ -152,8 +152,7 @@ export const projects = [
     year: "2025",
     link: "https://grill-orpin.vercel.app/",
     github: "https://github.com",
-    description:
-      "For the love of delicious food",
+    description: "For the love of delicious food",
     tech: ["html", " css", "javascript"],
     color: "#3D5A4C",
   },
@@ -187,13 +186,12 @@ export const projects = [
     year: "2025",
     link: "https://calculator-nu-one-vh5iq82wbd.vercel.app/",
     github: "https://github.com",
-    description:
-      "Calculations",
+    description: "Calculations",
     tech: ["html", "css", "javascript"],
     color: "#3D5A4C",
   },
 
-   {
+  {
     id: 12,
     title: "TutorLink",
     category: "Education",
@@ -202,6 +200,19 @@ export const projects = [
     github: "https://github.com",
     description:
       "Experience personalized learning designed to help you master any subject with confidence.",
+    tech: ["React", "TailwindCss", "MongoDB", "Express", "Node.js"],
+    color: "#3D5A4C",
+  },
+
+  {
+    id: 12,
+    title: "BlynQue",
+    category: "Love",
+    year: "2026",
+    link: " https://blyn-qe-five.vercel.app/",
+    github: "https://github.com",
+    description:
+      "A bespoke dating experience built for depth. No noise, no gamification—just a serene space for two people to find each other..",
     tech: ["React", "TailwindCss", "MongoDB", "Express", "Node.js"],
     color: "#3D5A4C",
   },
