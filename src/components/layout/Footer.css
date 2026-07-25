@@ -13,7 +13,7 @@
   gap: var(--space-md);
 }
 
-.footer__brand {
+.footer__brand {  
   display: flex;
   flex-direction: column;
   gap: 2px;

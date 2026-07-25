@@ -45,7 +45,7 @@ export default function Prelude({ onComplete }) {
               animate={phase >= 1 ? { opacity: 1 } : {}}
               transition={{ duration: 0.4, delay: 0.2 }}
             >
-              Enter the workspace
+              Hello World!
             </motion.span>
           </div>
         </motion.div>

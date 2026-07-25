@@ -35,3 +35,7 @@
   text-transform: uppercase;
   color: rgba(245, 240, 232, 0.5);
 }
+
+:root:not([data-theme="light"]) .prelude__sub { 
+    color: #000;
+}

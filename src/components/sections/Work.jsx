@@ -66,7 +66,7 @@ export default function Work() {
                     Live site ↗
                   </a>
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="work__link work__link--muted">
-                    Source
+                    
                   </a>
                 </div>
               </div>

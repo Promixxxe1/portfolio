@@ -10,6 +10,7 @@ import Craft from "./components/sections/Craft";
 import Journey from "./components/sections/Journey";
 import Voices from "./components/sections/Voices";
 import Connect from "./components/sections/Connect";
+import Float from "./components/ui/Float";
 import "./App.css";
 
 export default function App() {
@@ -45,6 +46,7 @@ export default function App() {
           <Voices />
           <Connect />
         </main>
+        <Float />
         <Footer />
       </div>
     </>

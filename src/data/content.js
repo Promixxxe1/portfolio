@@ -1,5 +1,5 @@
 export const profile = {
-  name: 'Iheanacho Promise',
+  name: ' Promised',
   // firstName: 'Iheanacho',
   lastName: 'Promised',
   title: 'Full Stack Developer',
