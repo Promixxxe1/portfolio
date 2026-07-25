@@ -153,23 +153,22 @@ export const projects = [
     link: "https://grill-orpin.vercel.app/",
     github: "https://github.com",
     description:
-      "Capturing life's most meaningful moments with creativity, passion, and timeless photography.",
+      "For the love of delicious food",
     tech: ["html", " css", "javascript"],
     color: "#3D5A4C",
   },
-   {
+  {
     id: 9,
     title: "OmniFood",
     category: "Eatery",
     year: "2025",
     link: "https://omnifood-seven-sandy.vercel.app/",
     github: "https://github.com",
-    description:
-      "Goodbye junk food. Hello super healthy meals.",
+    description: "Goodbye junk food. Hello super healthy meals.",
     tech: ["html", "css", "javascript"],
     color: "#3D5A4C",
   },
-   {
+  {
     id: 10,
     title: "CleanPro  Elite",
     category: "Cleaning Service",
@@ -181,7 +180,7 @@ export const projects = [
     tech: ["html", "css", "javascript"],
     color: "#3D5A4C",
   },
-   {
+  {
     id: 11,
     title: "Calculator",
     category: "Utility Tool",
@@ -189,8 +188,21 @@ export const projects = [
     link: "https://calculator-nu-one-vh5iq82wbd.vercel.app/",
     github: "https://github.com",
     description:
-      "Capturing life's most meaningful moments with creativity, passion, and timeless photography.",
+      "Calculations",
     tech: ["html", "css", "javascript"],
+    color: "#3D5A4C",
+  },
+
+   {
+    id: 12,
+    title: "TutorLink",
+    category: "Education",
+    year: "2026",
+    link: "https://tutor-link-clone.vercel.app/",
+    github: "https://github.com",
+    description:
+      "Experience personalized learning designed to help you master any subject with confidence.",
+    tech: ["React", "TailwindCss", "MongoDB", "Express", "Node.js"],
     color: "#3D5A4C",
   },
 ];
