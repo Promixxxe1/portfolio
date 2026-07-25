@@ -64,7 +64,7 @@
   .float-whatsapp {
     width: 56px;
     height: 56px;
-    left: 20px;
+    right: 20px;
     bottom: 90px; /* above your mobile bottom nav */
     font-size: 1.8rem;
   }

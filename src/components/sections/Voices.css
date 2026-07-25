@@ -1,27 +1,45 @@
 .voices__stack {
-  display: grid;
-  gap: var(--space-lg);
+  display: flex;
+  gap: var(--space-xl);
   margin-top: var(--space-2xl);
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+
+  padding-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
-  .voices__stack {
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-xl);
-  }
+/* Hide scrollbar */
+
+.voices__stack::-webkit-scrollbar {
+  display: none;
+}
+
+.voices__stack {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .voices__card {
+  flex: 0 0 420px;
+  min-width: 420px;
+
   background: var(--color-surface);
   padding: var(--space-xl);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
+
   position: relative;
   transition: var(--transition);
+
+  scroll-snap-align: start;
 }
 
 .voices__card:hover {
-  transform: translateY(-4px) rotate(calc(var(--offset, 0) * -0.5deg));
+  transform: translateY(-6px);
   box-shadow: var(--shadow-lift);
 }
 
@@ -43,11 +61,65 @@
 }
 
 .voices__name {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
 .voices__role {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: var(--color-ink-muted);
+}
+
+@media (max-width: 768px) {
+  .voices__card {
+    flex: 0 0 85%;
+    min-width: 85%;
+  }
+}
+.voices__header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:2rem;
+    margin-bottom:2rem;
+}
+
+.voices__controls {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.voices__controls button{
+    width: 48px;
+  height: 48px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-full);
+  font-size: 1.1rem;
+  transition: var(--transition);
+}
+
+.voices__controls button:hover{
+    background: var(--color-ink);
+  color: var(--color-bg);
+  border-color: var(--color-ink);
+}
+
+.voices__stack{
+    display:flex;
+    gap:2rem;
+
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    scroll-snap-type:x mandatory;
+
+    scrollbar-width:none;
+}
+
+.voices__stack::-webkit-scrollbar{
+    display:none;
+}
+
+.voices__card{
+    flex:0 0 420px;
+    scroll-snap-align:start;
 }
