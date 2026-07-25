@@ -154,26 +154,62 @@ export const projects = [
     github: "https://github.com",
     description:
       "Capturing life's most meaningful moments with creativity, passion, and timeless photography.",
-    tech: ["React", "Framer Motion", "EmailJS"],
+    tech: ["html", " css", "javascript"],
+    color: "#3D5A4C",
+  },
+   {
+    id: 9,
+    title: "OmniFood",
+    category: "Eatery",
+    year: "2025",
+    link: "https://omnifood-seven-sandy.vercel.app/",
+    github: "https://github.com",
+    description:
+      "Goodbye junk food. Hello super healthy meals.",
+    tech: ["html", "css", "javascript"],
+    color: "#3D5A4C",
+  },
+   {
+    id: 10,
+    title: "CleanPro  Elite",
+    category: "Cleaning Service",
+    year: "2025",
+    link: "https://cleaing.vercel.app/",
+    github: "https://github.com",
+    description:
+      " Premium cleaning services that go beyond spotless—we create sanctuaries where you can truly relax and thrive.",
+    tech: ["html", "css", "javascript"],
+    color: "#3D5A4C",
+  },
+   {
+    id: 11,
+    title: "Calculator",
+    category: "Utility Tool",
+    year: "2025",
+    link: "https://calculator-nu-one-vh5iq82wbd.vercel.app/",
+    github: "https://github.com",
+    description:
+      "Capturing life's most meaningful moments with creativity, passion, and timeless photography.",
+    tech: ["html", "css", "javascript"],
     color: "#3D5A4C",
   },
 ];
 
 export const timeline = [
   {
-    year: '2024',
+    year: '2026',
     role: 'Full Stack Developer',
     org: 'Freelance & Client Projects',
     desc: 'Delivering production web applications across fintech, CMS, and streaming domains.',
   },
   {
-    year: '2023',
+    year: '2025',
     role: 'Frontend Developer',
     org: 'Independent Projects',
     desc: 'Built portfolio sites, developer tools, and entertainment platforms with modern React stacks.',
   },
   {
-    year: '2022',
+    year: '2024',
     role: 'Learning & Building',
     org: 'Self-directed',
     desc: 'Deep dive into full-stack JavaScript — React, Node, databases, and deployment workflows.',
