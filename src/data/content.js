@@ -209,10 +209,22 @@ export const projects = [
     title: "BlynQue",
     category: "Love",
     year: "2026",
-    link: " https://blyn-qe-five.vercel.app/",
+    link: " https://blyn-qe-five.vercel.app/", 
     github: "https://github.com",
     description:
       "A bespoke dating experience built for depth. No noise, no gamification—just a serene space for two people to find each other..",
+    tech: ["React", "TailwindCss", "MongoDB", "Express", "Node.js"],
+    color: "#3D5A4C",
+  },
+  {
+    id: 13,
+    title: "Tomato",
+    category: "Food Delivery",
+    year: "2026",
+    link: " https://food-delivery-rust-five.vercel.app/",  
+    github: "https://github.com",
+    description:
+      "dishes crafted with the finest ingridients and culinary expertise",
     tech: ["React", "TailwindCss", "MongoDB", "Express", "Node.js"],
     color: "#3D5A4C",
   },
