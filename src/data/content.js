@@ -96,7 +96,7 @@ export const projects = [
     title: "BlynQue",
     category: "Love",
     year: "2026",
-    link: " https://blyn-qe-five.vercel.app/",
+    link: "https://blyn-qe-five.vercel.app/",
     github: "https://github.com",
     description:
       "A bespoke dating experience built for depth. No noise, no gamification—just a serene space for two people to find each other..",
@@ -109,7 +109,7 @@ export const projects = [
     title: "TutorLink",
     category: "Education",
     year: "2026",
-    link: "tutor-link.com.ng",
+    link: "https://tutor-link.com.ng",
     github: "https://github.com",
     description:
       "Experience personalized learning designed to help you master any subject with confidence.",
